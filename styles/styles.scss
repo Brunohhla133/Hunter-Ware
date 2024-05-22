@@ -92,3 +92,26 @@ body{
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
+
+.hotsale{
+    .hotsale1{
+        width: 100%;
+        margin-bottom: 20px;
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            overflow: hidden;
+        }
+    }
+    .hotsale2{
+        width: 100%;
+        margin-bottom: 20px;
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            overflow: hidden;
+        }
+    }
+}
