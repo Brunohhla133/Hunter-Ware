@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.navbar{
+body{
     background-color: black;
+}
+.navbar{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.212);
     .navbar-toggler-icon{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
@@ -13,25 +18,77 @@
         background-color: #FFD43B;
         color: hsl(39, 94%, 41%);
     }
-}
-.navbar-brand img{
-    width: 10%;
-    border: none;
-}
-.nav-item{
-    font-family: "Anta", sans-serif;
-    font-size: 20px;
-    margin: 15px;
-    a{
-        color: #FFD43B;
+    .navbar-brand img{
+        width: 10%;
+        border: 5px solid #FFD43B;
+    }
+    .nav-item{
+        font-family: "Anta", sans-serif;
+        font-size: 20px;
+        margin: 15px;
+        a{
+            color: #FFD43B;
+            text-shadow: 0 0 7px #FFD43B;
+        }
+        .fa-solid{
+            font-size: 35px;
+            margin-top:3px;
+        }
+    }
+    .d-flex{
+        button{
+            background-color: #FFD43B;
+            color: white;
+        }
     }
 }
-.carousel-inner{
+.banner{
     width: 100%;
-    .carousel-inner, img{
-        width: 100%;
-        overflow: hidden;
-        height: fit-content;
-        
+    height: 750px;
+    background: url(../assets/banner\ 2.0\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wave{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.slider-box{
+    width: 90%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
     }
+    li{
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
