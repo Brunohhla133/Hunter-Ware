@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+$color1: #FFD43B;
+$color2: hsla(0, 0%, 15%, 0.678);
 body{
     background-color: black;
 }
@@ -15,20 +17,20 @@ body{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     button.navbar-toggler{
-        background-color: #FFD43B;
+        background-color: $color1;
         color: hsl(39, 94%, 41%);
     }
     .navbar-brand img{
         width: 10%;
-        border: 5px solid #FFD43B;
+        border: 5px solid $color1;
     }
     .nav-item{
         font-family: "Anta", sans-serif;
         font-size: 20px;
         margin: 15px;
         a{
-            color: #FFD43B;
-            text-shadow: 0 0 7px #FFD43B;
+            color: $color1;
+            text-shadow: 0 0 7px $color1;
         }
         .fa-solid{
             font-size: 35px;
@@ -37,14 +39,14 @@ body{
     }
     .d-flex{
         button{
-            background-color: #FFD43B;
+            background-color: $color1;
             color: white;
         }
     }
 }
 .banner{
     width: 100%;
-    height: 750px;
+    height:150vh;
     background: url(../assets/banner\ 2.0\ \(2\).png);
     background-position: center;
     background-size: cover;
@@ -114,4 +116,20 @@ body{
             overflow: hidden;
         }
     }
+}
+
+footer{
+    background-color: hsla(0, 0%, 15%, 0.678);
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    p{
+        color: aliceblue;
+        margin-bottom: 20px;
+    }
+}
+.redes a{
+    text-decoration: none;
+    color: $color1;
 }
